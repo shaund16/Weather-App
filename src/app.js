@@ -30,7 +30,8 @@ app.get('', (req, res) => {
 //About Page
 app.get('/about', (req, res) => {
     res.render('about', {
-        title: 'About Me',
+        title: 'About',
+        msg: "Hi, I'm Shaun! I built this using Node.js, Express.js, Handlebars, Mapbox API. ",
         name: 'Shaun Purslow'
     })
 })
@@ -38,9 +39,9 @@ app.get('/about', (req, res) => {
 //Help Page
 app.get('/help', (req, res) => {
     res.render('help', {
-        title: 'Help Page',
+        title: 'Help',
         name: 'Shaun Purslow',
-        message: 'This is the help page. Do you need help ? Try Google'
+        message: 'Do you need help? Try google!'
     })
 })
 
@@ -48,11 +49,11 @@ app.get('/help', (req, res) => {
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
         return res.send({
-            error: 'Please provide a valid address'
+            error: 'Please provide an address!'
         })
     }
 
-    geocode(req.query.address, (error, { latitude, longitude, location }) => {
+    geocode(req.query.address, (error, { latitude, longitude, location } = {}) => {
         if (error) {
             return res.send({ error })
         }

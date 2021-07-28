@@ -6,12 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="icon" href="/img/weather.png">
-  <title>Web Server</title>
+  <title>Weather</title>
 </head>
 <body>
   <div class="main-content">
   {{>header}}
-  <p>Use this site to get your weather</p>
+  <p class="weather__p">Enter location to get your current weather</p>
+
+  <form>
+    <input type="text" placeholder="Location">
+    <button>Search</button>
+  </form>
+
+  <p id='message-1'></p>
+  <p id='message-2'></p>
+  <p id='message-3'></p>
   </div>
   {{>footer}}
   <script src="./js/app.js"></script>

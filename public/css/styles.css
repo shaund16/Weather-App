@@ -1,24 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Kaushan+Script&family=Otomanopee+One&family=Permanent+Marker&family=Satisfy&display=swap');
 body {
+  background-color: #51C4D3;
   color: #333333;
   font-family: arial;
   max-width: 650px;
   margin: 0 auto;
   padding: 0 16px;
-
+  text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+
+
+/* Weather Page  */
+.header {
+  color: #D8E3E7;
+  font-family: 'Satisfy', sans-serif;
+  font-size: 10em;
+  animation: bounce 2.5s infinite;
+  margin-bottom: 16px;
+}
+
+a {
+  font-family: 'Kaushan Script', sans-serif;
+  text-decoration: none;
+  margin-right: 16px;
+  color: #D8E3E7;
+}
+
+a:hover {
+  color: #126E82;
+}
+
+.weather__p {
+  font-family: 'Permanent Marker', cursive;
+  color: #126E82;
+  opacity: 0.6;
+  
+}
+
 .main-content {
   flex-grow: 1;
 }
+p {
+  font-family: 'Baloo Chettan 2', cursive;
+}
 
-footer {
-  color: #888888;
-  border-top: 1px solid #eeeeee;
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+  background-color: #D8E3E7;
+  outline: none;
+  border-radius: 7px;
+  font-family: 'sans-serif';
+}
+
+button {
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: #132C33;
+  font-family: 'Permanent Marker', cursive;
+  color: #D8E3E7;
+  border: none;
+  margin-left: .5em;
+}
+
+button:hover {
+  box-shadow: 3px 4px 3px #126E82;
+  transition: box-shadow 0.3s ease-in-out;
+  background-color: #D8E3E7;
+  color: #132C33;
+}
+
+#message-1 {
+  font-family: 'Otomanopee One', sans-serif;
+  color: #132C33;
+}
+
+#message-2,
+.about__message {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+
+
+.error {
+  color: red;
+  font-family: 'Baloo Chettan 2', cursive;
+  
+  padding: 5px;
+}
+
+footer p {
+  color: #132C33;
+  border-top: 1px solid #126E82;
   margin-top: 16px;
   padding: 16px 0;
+  font-family: 'Otomanopee One', sans-serif;
 }
 
 header {
@@ -26,18 +107,16 @@ header {
   margin-bottom: 48px;
 }
 
-h1 {
-  font-size: 64px;
-  margin-bottom: 16px;
-}
 
-header a {
-  color: #888888;
-  margin-right: 16px;
-  text-decoration: none;
-}
+
+
 
 .portrait {
-  width: 250px;
+  width: 150px;
+  border-radius: 20em;
 
 }
+
+
+
+
