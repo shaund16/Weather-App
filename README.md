@@ -1,6 +1,6 @@
 # Weather App
 
-This is built using the following technologies:
+Built using the following technologies:
 
 Node.js
 Express.js
@@ -8,8 +8,11 @@ Handlebars
 Postman
 Mapbox API
 
+## How to use
+Enter in a location, and the current weather will show for that location. 
 
-## ScreenShots
+
+### ScreenShots
 
 Calgary Location
 ![calgary](public/img/calgary-search.png)
